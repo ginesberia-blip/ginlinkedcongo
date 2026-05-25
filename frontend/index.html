@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GinLinkedCongo — La plateforme locale et panafricaine qui relie l'éducation, le travail et les opportunités au Congo-Brazzaville.">
+  <meta name="author" content="Gines Ishtadeva Beria">
+  <meta property="og:title" content="GinLinkedCongo">
+  <meta property="og:description" content="Réseau professionnel congolais — éducation, emploi, opportunités.">
+  <meta property="og:type" content="website">
+  <title>GinLinkedCongo — Ton réseau, tes opportunités</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="main-nav">
+    <div class="nav-inner">
+      <div class="logo" onclick="showPage('home')">
+        <div class="logo-dot"></div>
+        GinLinkedCongo
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a onclick="showPage('opportunites')">Opportunités</a></li>
+        <li><a onclick="showPage('groupes')">Groupes</a></li>
+        <li><a onclick="showPage('education')">Éducation</a></li>
+        <li><a onclick="showPage('about')">À propos</a></li>
+        <li><a onclick="showPage('connexion')" class="nav-login">Connexion</a></li>
+        <li><a onclick="showPage('inscription')" class="nav-cta">Rejoindre</a></li>
+      </ul>
+      <button class="nav-burger" onclick="toggleMenu()" aria-label="Menu">
+        <i class="ti ti-menu-2"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HOME PAGE -->
+  <div id="page-home" class="page active">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        Plateforme panafricaine · Congo-Brazzaville
+      </div>
+      <h1 class="hero-title">Ton réseau,<br>tes <em>opportunités</em>,<br>ton avenir.</h1>
+      <p class="hero-sub">GinLinkedCongo connecte élèves, étudiants, professionnels et entrepreneurs au Congo et en Afrique. Éducation, emploi, projets — tout en un seul endroit.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="showPage('inscription')">
+          <i class="ti ti-user-plus"></i> Créer mon profil gratuit
+        </button>
+        <button class="btn-secondary" onclick="showPage('opportunites')">
+          Voir les opportunités <i class="ti ti-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+      <div class="stat"><span class="stat-num">7</span><span class="stat-label">Langues</span></div>
+      <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Gratuit</span></div>
+      <div class="stat"><span class="stat-num">CV</span><span class="stat-label">PDF Inclus</span></div>
+      <div class="stat"><span class="stat-num">🌍</span><span class="stat-label">Diaspora</span></div>
+      <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Opportunités</span></div>
+    </div>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <div class="section-label">Fonctionnalités</div>
+      <h2>Tout ce dont tu as besoin</h2>
+      <p class="section-desc">Une plateforme pensée pour la réalité congolaise, avec des outils puissants pour chaque étape de ton parcours.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ti ti-user-circle"></i></div>
+          <h3>Profil complet</h3>
+          <p>Crée ton profil avec parcours, compétences, expériences et portfolio visible par toute la communauté.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ti ti-file-cv"></i></div>
+          <h3>CV numérique PDF</h3>
+          <p>Génère et télécharge ton CV professionnel en PDF depuis ton profil, toujours à jour.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ti ti-briefcase"></i></div>
+          <h3>Candidature en ligne</h3>
+          <p>Postule à des emplois, stages, missions freelance et concours en quelques clics.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ti ti-school"></i></div>
+          <h3>Suivi éducatif</h3>
+          <p>Ressources pour le Bac, BEPC, concours. Révise et progresse avec ta communauté.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ti ti-users-group"></i></div>
+          <h3>Groupes thématiques</h3>
+          <p>Rejoins des espaces dédiés : Bac, filières techniques, business, diaspora, opportunités.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ti ti-speakerphone"></i></div>
+          <h3>Marketing digital local</h3>
+          <p>Publie tes annonces, services et projets. Développe ta visibilité locale et internationale.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ti ti-message-circle"></i></div>
+          <h3>Messagerie privée</h3>
+          <p>Échange directement avec des recruteurs, mentors et membres de ton réseau.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ti ti-globe"></i></div>
+          <h3>Diaspora connectée</h3>
+          <p>Connecte les Congolais du monde entier aux opportunités de leur pays d'origine.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section-alt">
+      <div class="section-label">Comment ça marche</div>
+      <h2>Démarrer en 6 étapes</h2>
+      <p class="section-desc">Simple, rapide et accessible à tous.</p>
+      <div class="steps">
+        <div class="step" onclick="showPage('inscription')">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3>Créer un compte</h3>
+            <p>Inscris-toi avec ton nom, email, téléphone. C'est gratuit.</p>
+          </div>
+          <i class="ti ti-arrow-right step-arrow"></i>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3>Choisir ta langue</h3>
+            <p>Français, Kitouba, Lingala, Anglais, Espagnol, Allemand ou Italien.</p>
+          </div>
+          <i class="ti ti-arrow-right step-arrow"></i>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3>Compléter ton profil</h3>
+            <p>Éducation, compétences, expériences et CV numérique.</p>
+          </div>
+          <i class="ti ti-arrow-right step-arrow"></i>
+        </div>
+        <div class="step" onclick="showPage('groupes')">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h3>Rejoindre des groupes</h3>
+            <p>Bac, concours, opportunités, business — trouve ta communauté.</p>
+          </div>
+          <i class="ti ti-arrow-right step-arrow"></i>
+        </div>
+        <div class="step" onclick="showPage('opportunites')">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h3>Publier ou postuler</h3>
+            <p>Partage ton projet, postule à un emploi ou propose un service.</p>
+          </div>
+          <i class="ti ti-arrow-right step-arrow"></i>
+        </div>
+        <div class="step">
+          <div class="step-num">6</div>
+          <div class="step-content">
+            <h3>Interagir</h3>
+            <p>Messages, recommandations, likes — construis ton réseau.</p>
+          </div>
+          <i class="ti ti-check step-arrow"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="section">
+      <div class="section-label">Multilingue</div>
+      <h2>Parle ta langue</h2>
+      <p class="section-desc">GinLinkedCongo est disponible en 7 langues pour que chaque Congolais se sente chez lui.</p>
+      <div class="langs">
+        <div class="lang active" onclick="selectLang(this,'Français','Bienvenue !')">🇫🇷 Français</div>
+        <div class="lang" onclick="selectLang(this,'Kitouba','Boyei malamu !')">🗣️ Kitouba</div>
+        <div class="lang" onclick="selectLang(this,'Lingala','Boyei bolamu !')">🗣️ Lingala</div>
+        <div class="lang" onclick="selectLang(this,'English','Welcome !')">🇬🇧 English</div>
+        <div class="lang" onclick="selectLang(this,'Español','¡Bienvenido !')">🇪🇸 Español</div>
+        <div class="lang" onclick="selectLang(this,'Deutsch','Willkommen !')">🇩🇪 Deutsch</div>
+        <div class="lang" onclick="selectLang(this,'Italiano','Benvenuto !')">🇮🇹 Italiano</div>
+      </div>
+      <p class="lang-msg" id="lang-msg">Langue sélectionnée : Français — Bienvenue !</p>
+    </section>
+
+    <!-- CTA BANNER -->
+    <div class="cta-banner">
+      <h2>Prêt à rejoindre le réseau ?</h2>
+      <p>Gratuit · Accessible · Fait pour toi</p>
+      <button class="btn-white" onclick="showPage('inscription')">Créer mon compte maintenant</button>
+    </div>
+
+  </div><!-- /page-home -->
+
+  <!-- OPPORTUNITES PAGE -->
+  <div id="page-opportunites" class="page">
+    <section class="section">
+      <div class="section-label">Offres disponibles</div>
+      <h2>Opportunités</h2>
+      <p class="section-desc">Emplois, stages et missions freelance au Congo-Brazzaville et à l'international.</p>
+      <div class="tabs">
+        <button class="tab active" onclick="filterOpp(this,'all')">Toutes</button>
+        <button class="tab" onclick="filterOpp(this,'emploi')">Emploi</button>
+        <button class="tab" onclick="filterOpp(this,'stage')">Stage</button>
+        <button class="tab" onclick="filterOpp(this,'freelance')">Freelance</button>
+        <button class="tab" onclick="filterOpp(this,'concours')">Concours</button>
+      </div>
+      <div class="opps-grid" id="opps-grid">
+        <div class="opp-card" data-type="emploi">
+          <div class="opp-type">Emploi</div>
+          <h3>Développeur Web Junior</h3>
+          <p>Startup tech basée à Brazzaville cherche développeur React/Node.js pour rejoindre l'équipe produit.</p>
+          <div class="opp-meta">
+            <span class="opp-loc"><i class="ti ti-map-pin"></i> Brazzaville</span>
+            <span class="badge badge-emploi">CDI</span>
+          </div>
+        </div>
+        <div class="opp-card" data-type="stage">
+          <div class="opp-type">Stage</div>
+          <h3>Stage Communication Digitale</h3>
+          <p>ONG internationale recherche stagiaire pour gestion des réseaux sociaux et contenu web.</p>
+          <div class="opp-meta">
+            <span class="opp-loc"><i class="ti ti-map-pin"></i> Pointe-Noire</span>
+            <span class="badge badge-stage">6 mois</span>
+          </div>
+        </div>
+        <div class="opp-card" data-type="freelance">
+          <div class="opp-type">Freelance</div>
+          <h3>Designer Graphique</h3>
+          <p>Agence événementielle cherche designer freelance pour visuels et supports print.</p>
+          <div class="opp-meta">
+            <span class="opp-loc"><i class="ti ti-map-pin"></i> Remote / Congo</span>
+            <span class="badge badge-freelance">Projet</span>
+          </div>
+        </div>
+        <div class="opp-card" data-type="emploi">
+          <div class="opp-type">Emploi</div>
+          <h3>Comptable Certifié</h3>
+          <p>PME du secteur BTP recrute un comptable expérimenté pour gestion financière complète.</p>
+          <div class="opp-meta">
+            <span class="opp-loc"><i class="ti ti-map-pin"></i> Brazzaville</span>
+            <span class="badge badge-emploi">CDI</span>
+          </div>
+        </div>
+        <div class="opp-card" data-type="stage">
+          <div class="opp-type">Stage</div>
+          <h3>Stage Ingénierie Pétrolière</h3>
+          <p>Entreprise pétrolière internationale propose stage technique pour étudiants en génie civil/pétrolier.</p>
+          <div class="opp-meta">
+            <span class="opp-loc"><i class="ti ti-map-pin"></i> Pointe-Noire</span>
+            <span class="badge badge-stage">3 mois</span>
+          </div>
+        </div>
+        <div class="opp-card" data-type="freelance">
+          <div class="opp-type">Freelance</div>
+          <h3>Rédacteur Web Francophone</h3>
+          <p>Média digital panafricain cherche rédacteurs freelance pour articles politiques et économiques.</p>
+          <div class="opp-meta">
+            <span class="opp-loc"><i class="ti ti-map-pin"></i> International</span>
+            <span class="badge badge-freelance">Remote</span>
+          </div>
+        </div>
+        <div class="opp-card" data-type="concours">
+          <div class="opp-type">Concours</div>
+          <h3>Bourse d'études — Union Africaine</h3>
+          <p>Programme de bourses pour étudiants africains souhaitant poursuivre des études supérieures à l'étranger.</p>
+          <div class="opp-meta">
+            <span class="opp-loc"><i class="ti ti-map-pin"></i> International</span>
+            <span class="badge badge-emploi">Bourse</span>
+          </div>
+        </div>
+        <div class="opp-card" data-type="emploi">
+          <div class="opp-type">Emploi</div>
+          <h3>Responsable Marketing</h3>
+          <p>Grande enseigne commerciale de Brazzaville recrute un responsable marketing digital expérimenté.</p>
+          <div class="opp-meta">
+            <span class="opp-loc"><i class="ti ti-map-pin"></i> Brazzaville</span>
+            <span class="badge badge-emploi">CDI</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-cta">
+        <button class="btn-primary" onclick="showPage('inscription')">
+          <i class="ti ti-send"></i> Postuler — Créer mon compte
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <!-- GROUPES PAGE -->
+  <div id="page-groupes" class="page">
+    <section class="section">
+      <div class="section-label">Communauté</div>
+      <h2>Groupes thématiques</h2>
+      <p class="section-desc">Rejoins des espaces d'échange avec des milliers de membres qui partagent tes objectifs.</p>
+      <div class="groups-grid">
+        <div class="group-card" onclick="showPage('inscription')">
+          <div class="group-emoji">🎓</div>
+          <h3>Bac & Révisions</h3>
+          <p>Ressources, corrigés et entraide pour le baccalauréat</p>
+          <span class="group-members">2 400 membres</span>
+        </div>
+        <div class="group-card" onclick="showPage('inscription')">
+          <div class="group-emoji">📝</div>
+          <h3>BEPC & Concours</h3>
+          <p>Préparation aux examens et concours nationaux</p>
+          <span class="group-members">1 850 membres</span>
+        </div>
+        <div class="group-card" onclick="showPage('inscription')">
+          <div class="group-emoji">💼</div>
+          <h3>Opportunités Business</h3>
+          <p>Idées, partenariats et projets entrepreneuriaux</p>
+          <span class="group-members">3 100 membres</span>
+        </div>
+        <div class="group-card" onclick="showPage('inscription')">
+          <div class="group-emoji">🌍</div>
+          <h3>Diaspora Congolaise</h3>
+          <p>Connecte la diaspora avec le pays d'origine</p>
+          <span class="group-members">5 600 membres</span>
+        </div>
+        <div class="group-card" onclick="showPage('inscription')">
+          <div class="group-emoji">⚙️</div>
+          <h3>Filières Techniques</h3>
+          <p>Ingénierie, BTP, pétrole, informatique</p>
+          <span class="group-members">1 200 membres</span>
+        </div>
+        <div class="group-card" onclick="showPage('inscription')">
+          <div class="group-emoji">🎨</div>
+          <h3>Arts & Créatifs</h3>
+          <p>Design, musique, mode, photographie congolaise</p>
+          <span class="group-members">980 membres</span>
+        </div>
+        <div class="group-card" onclick="showPage('inscription')">
+          <div class="group-emoji">🏥</div>
+          <h3>Santé & Sciences</h3>
+          <p>Médecine, pharmacie, biologie et recherche</p>
+          <span class="group-members">740 membres</span>
+        </div>
+        <div class="group-card" onclick="showPage('inscription')">
+          <div class="group-emoji">📢</div>
+          <h3>Marketing & Com</h3>
+          <p>Communication digitale et marketing local</p>
+          <span class="group-members">1 650 membres</span>
+        </div>
+        <div class="group-card" onclick="showPage('inscription')">
+          <div class="group-emoji">⚖️</div>
+          <h3>Droit & Administration</h3>
+          <p>Droit, administration publique et sciences politiques</p>
+          <span class="group-members">560 membres</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- EDUCATION PAGE -->
+  <div id="page-education" class="page">
+    <section class="section">
+      <div class="section-label">Suivi scolaire</div>
+      <h2>Espace Éducation</h2>
+      <p class="section-desc">Ressources, révisions et suivi pour réussir tes examens au Congo-Brazzaville.</p>
+      <div class="edu-grid">
+        <div class="edu-card card-green">
+          <i class="ti ti-book-2 edu-icon"></i>
+          <h3>Baccalauréat</h3>
+          <p>Fiches de révision, sujets corrigés, conseils de méthode pour toutes les séries.</p>
+          <button class="btn-outline" onclick="showPage('inscription')">Accéder aux ressources</button>
+        </div>
+        <div class="edu-card card-gold">
+          <i class="ti ti-pencil edu-icon"></i>
+          <h3>BEPC</h3>
+          <p>Préparation complète au Brevet d'Études du Premier Cycle avec exercices interactifs.</p>
+          <button class="btn-outline" onclick="showPage('inscription')">Accéder aux ressources</button>
+        </div>
+        <div class="edu-card card-red">
+          <i class="ti ti-trophy edu-icon"></i>
+          <h3>Concours nationaux</h3>
+          <p>Grandes écoles, concours de la fonction publique, bourses d'études — tout en un.</p>
+          <button class="btn-outline" onclick="showPage('inscription')">Accéder aux ressources</button>
+        </div>
+        <div class="edu-card card-green">
+          <i class="ti ti-device-laptop edu-icon"></i>
+          <h3>Formation en ligne</h3>
+          <p>Cours et formations professionnelles en numérique, gestion, langues et plus encore.</p>
+          <button class="btn-outline" onclick="showPage('inscription')">Voir les formations</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ABOUT PAGE -->
+  <div id="page-about" class="page">
+    <section class="section">
+      <div class="section-label">Notre mission</div>
+      <h2>À propos de GinLinkedCongo</h2>
+      <p class="section-desc">Une plateforme créée par et pour les Congolais, avec une vision panafricaine.</p>
+      <div class="about-content">
+        <div class="about-block">
+          <h3><i class="ti ti-eye"></i> Vision</h3>
+          <p>GinLinkedCongo est une plateforme locale et panafricaine qui relie l'éducation, le travail et les opportunités. Elle permet aux élèves, étudiants, chercheurs d'emploi, entrepreneurs et professionnels de se connecter, partager leurs projets, développer leur carrière et accéder à des opportunités au Congo-Brazzaville et à l'international.</p>
+        </div>
+        <div class="about-block">
+          <h3><i class="ti ti-target"></i> Objectifs</h3>
+          <ul class="about-list">
+            <li>Offrir un suivi éducatif (Bac, BEPC, concours, révisions, ressources)</li>
+            <li>Créer un réseau professionnel congolais adapté localement</li>
+            <li>Donner de la visibilité aux projets et talents locaux</li>
+            <li>Offrir une plateforme de candidature en ligne</li>
+            <li>Faciliter le marketing digital local</li>
+            <li>Connecter la diaspora aux opportunités du pays</li>
+          </ul>
+        </div>
+        <div class="about-block">
+          <h3><i class="ti ti-code"></i> Technologies utilisées</h3>
+          <div class="tech-tags">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">JWT Auth</span>
+            <span class="tech-tag">React Native</span>
+            <span class="tech-tag">AWS / Vercel</span>
+          </div>
+        </div>
+        <div class="about-block owner-block">
+          <h3><i class="ti ti-crown"></i> Fondateur & Propriétaire</h3>
+          <div class="owner-card">
+            <div class="owner-avatar">GIB</div>
+            <div>
+              <p class="owner-name">Gines Ishtadeva Beria</p>
+              <p class="owner-role">Fondateur de GinLinkedCongo</p>
+              <p class="owner-desc">Visionnaire et entrepreneur congolais, créateur de la plateforme GinLinkedCongo pour connecter les talents du Congo-Brazzaville et de la diaspora africaine avec les opportunités du monde.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- INSCRIPTION PAGE -->
+  <div id="page-inscription" class="page">
+    <section class="section">
+      <div class="auth-card">
+        <div class="auth-toggle">
+          <button class="auth-tab active" onclick="switchAuth('inscription',this)">Inscription</button>
+          <button class="auth-tab" onclick="showPage('connexion')">Connexion</button>
+        </div>
+        <div class="alert alert-success" id="success-alert">
+          <i class="ti ti-circle-check"></i>
+          <span id="success-msg">Compte créé avec succès !</span>
+        </div>
+        <div class="alert alert-error" id="error-alert">
+          <i class="ti ti-alert-circle"></i>
+          <span id="error-msg">Veuillez remplir tous les champs.</span>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Prénom *</label>
+            <input type="text" id="f-prenom" placeholder="Jean-Paul">
+          </div>
+          <div class="form-group">
+            <label>Nom *</label>
+            <input type="text" id="f-nom" placeholder="Moukala">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="email" id="f-email" placeholder="jean@example.com">
+        </div>
+        <div class="form-group">
+          <label>Téléphone</label>
+          <input type="tel" id="f-tel" placeholder="+242 06 000 0000">
+        </div>
+        <div class="form-group">
+          <label>Profil</label>
+          <select id="f-profil">
+            <option value="">Choisir mon profil...</option>
+            <option>Élève / Lycéen</option>
+            <option>Étudiant</option>
+            <option>Chercheur d'emploi</option>
+            <option>Entrepreneur</option>
+            <option>Professionnel</option>
+            <option>Diaspora</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Langue préférée</label>
+          <select id="f-langue">
+            <option>Français</option>
+            <option>Kitouba</option>
+            <option>Lingala</option>
+            <option>Anglais</option>
+            <option>Espagnol</option>
+            <option>Allemand</option>
+            <option>Italien</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Mot de passe *</label>
+          <input type="password" id="f-mdp" placeholder="Min. 8 caractères">
+        </div>
+        <div class="form-group">
+          <label>Confirmer le mot de passe *</label>
+          <input type="password" id="f-mdp2" placeholder="Répéter le mot de passe">
+        </div>
+        <button class="btn-primary btn-full" onclick="inscrire()">
+          <i class="ti ti-user-plus"></i> Créer mon compte gratuitement
+        </button>
+        <p class="form-note">En créant un compte, vous acceptez les <a href="#" onclick="return false">conditions d'utilisation</a> et la <a href="#" onclick="return false">politique de confidentialité</a> de GinLinkedCongo.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- CONNEXION PAGE -->
+  <div id="page-connexion" class="page">
+    <section class="section">
+      <div class="auth-card">
+        <div class="auth-toggle">
+          <button class="auth-tab" onclick="showPage('inscription')">Inscription</button>
+          <button class="auth-tab active" onclick="switchAuth('connexion',this)">Connexion</button>
+        </div>
+        <div class="alert alert-success" id="login-alert">
+          <i class="ti ti-circle-check"></i>
+          <span>Connexion réussie ! Bienvenue.</span>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="l-email" placeholder="votre@email.com">
+        </div>
+        <div class="form-group">
+          <label>Mot de passe</label>
+          <input type="password" id="l-mdp" placeholder="••••••••">
+        </div>
+        <button class="btn-primary btn-full" onclick="connecter()">
+          <i class="ti ti-login"></i> Se connecter
+        </button>
+        <p class="form-note" style="text-align:center;margin-top:1rem;">
+          Pas encore de compte ? <a onclick="showPage('inscription')" style="cursor:pointer;color:var(--green)">Créer un compte gratuit</a>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo footer-logo" onclick="showPage('home')">
+          <div class="logo-dot"></div>
+          GinLinkedCongo
+        </div>
+        <p>La plateforme du réseau congolais<br>Éducation · Emploi · Opportunités</p>
+        <div class="footer-langs">
+          <span>🇫🇷</span><span>🗣️</span><span>🗣️</span><span>🇬🇧</span><span>🇪🇸</span><span>🇩🇪</span><span>🇮🇹</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Plateforme</h4>
+        <a onclick="showPage('opportunites')">Opportunités</a>
+        <a onclick="showPage('groupes')">Groupes</a>
+        <a onclick="showPage('education')">Éducation</a>
+        <a onclick="showPage('inscription')">Créer un compte</a>
+      </div>
+      <div class="footer-links">
+        <h4>À propos</h4>
+        <a onclick="showPage('about')">Notre mission</a>
+        <a onclick="showPage('about')">Fondateur</a>
+        <a>Conditions d'utilisation</a>
+        <a>Confidentialité</a>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <a>contact@ginlinkedcongo.com</a>
+        <a>Brazzaville, Congo</a>
+        <a>+242 — —</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 GinLinkedCongo · Tous droits réservés</p>
+      <p class="footer-owner">Fondé et dirigé par <strong>Gines Ishtadeva Beria</strong></p>
+      <p>Congo-Brazzaville · Afrique · Diaspora</p>
+    </div>
+  </footer>
+
+  <script src="src/main.js"></script>
+</body>
+</html>
